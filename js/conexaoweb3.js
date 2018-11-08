@@ -18,6 +18,7 @@ function verificaConta() {
     }
 }
 
+
 window.addEventListener('load', async (event) => {
     var statusConexao = document.getElementById("statusConexao");
     // Navegadores com novo Metamask    
