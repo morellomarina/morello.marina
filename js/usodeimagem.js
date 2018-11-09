@@ -95,7 +95,7 @@ function registrarNomeEmpresa() {
         } else {
             console.log("Resultado");
             console.log(resultado);
-            statusTransacao.innerHTML = "Sucesso: " + err;
+            statusTransacao.innerHTML = "Sucesso: " + resultado;
         }
     });
 }
@@ -111,7 +111,7 @@ function registrarNomeAgente() {
         } else {
             console.log("Resultado");
             console.log(resultado);
-            statusTransacao.innerHTML = "Sucesso: " + err;
+            statusTransacao.innerHTML = "Sucesso: " + resultado;
         }
     });
 }
