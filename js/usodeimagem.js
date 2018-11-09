@@ -76,7 +76,7 @@ function obtemNomeEmpresa() {
 
 function registrar() {
 	var nomeEmpresa = document.formNomeEmpresa.campoNomeEmpresa.value;
-	var nomeAgente = document.formNomeAgente.campoNomeAgente.value;
+	var nomeAgente = document.formNomeEmpresa.campoNomeAgente.value;
 	if (nomeEmpresa.length > 1) {
 		registrarNomeEmpresa();
 	} else if (nomeAgente.length > 1) {
@@ -102,7 +102,7 @@ function registrarNomeEmpresa() {
 	
 function registrarNomeAgente() {
 	var statusTransacao = document.getElementById("statusTransacaoNomeAgente");
-	var nomeAgente = document.formNomeAgente.campoNomeAgente.value;
+	var nomeAgente = document.formNomeEmpresa.campoNomeAgente.value;
 	contratoUsoDeImagem.definirAgente(nomeAgente, {from: contaUsuario, gas: 3000000, value: 0}, function (err, resultado) {
         if (err)    {
             console.log("Erro");
