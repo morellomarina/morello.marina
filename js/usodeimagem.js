@@ -74,6 +74,16 @@ function obtemNomeEmpresa() {
     });
 }
 
+function registrar() {
+	var nomeEmpresa = document.formNomeEmpresa.campoNomeEmpresa.value;
+	var nomeAgente = document.formNomeAgente.campoNomeAgente.value;
+	if (nomeEmpresa.length > 1) {
+		registrarNomeEmpresa();
+	} else if (nomeAgente.length > 1) {
+		registrarNomeAgente();
+	}
+}
+
 function registrarNomeEmpresa() {
 	var statusTransacao = document.getElementById("statusTransacaoNomeEmpresa");
 	var nomeEmpresa = document.formNomeEmpresa.campoNomeEmpresa.value;
