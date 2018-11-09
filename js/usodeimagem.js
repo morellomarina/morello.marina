@@ -88,8 +88,9 @@ function registrarNomeEmpresa() {
             statusTransacao.innerHTML = "Sucesso: " + err;
         }
     });
+}
 	
-	function registrarNomeAgente() {
+function registrarNomeAgente() {
 	var statusTransacao = document.getElementById("statusTransacaoNomeAgente");
 	var nomeAgente = document.formNomeAgente.campoNomeAgente.value;
 	contratoUsoDeImagem.definirAgente(nomeAgente, {from: contaUsuario, gas: 3000000, value: 0}, function (err, resultado) {
